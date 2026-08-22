@@ -5,12 +5,10 @@ export async function POST(request: Request) {
     const { planId } = await request.json();
 
     // MAPA DOS CHECKOUTS DA CAKTO
-    // Aqui você vai colar o link do checkout que contém a combinação (Implementação + Mensalidade)
-    // para cada um dos 3 serviços.
     const CAKTO_PLANS: Record<string, string> = {
-      'plan_cardapio': 'COLE_AQUI_O_LINK_DO_CARDAPIO_QUE_VENDE', 
-      'plan_presenca': 'COLE_AQUI_O_LINK_DA_PRESENCA_BLINDADA',
-      'plan_anti_noshow': 'COLE_AQUI_O_LINK_DO_ANTI_NOSHOW'
+      'plan_cardapio': 'https://pay.cakto.com.br/8793vpu', 
+      'plan_presenca': 'https://pay.cakto.com.br/ktdh6pk',
+      'plan_anti_noshow': 'https://pay.cakto.com.br/7iq37bs_1056712'
     };
 
     const checkoutUrl = CAKTO_PLANS[planId];
