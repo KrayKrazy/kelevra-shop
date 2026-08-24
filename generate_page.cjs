@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const pageContent = `'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 
@@ -34,8 +36,8 @@ function LuxuryCursor() {
       trailPosRef.current.x += (posRef.current.x - trailPosRef.current.x) * 0.12;
       trailPosRef.current.y += (posRef.current.y - trailPosRef.current.y) * 0.12;
 
-      cur.style.transform = `translate(${posRef.current.x - 8}px, ${posRef.current.y - 8}px) scale(${isHoveringRef.current ? 2 : 1})`;
-      trail.style.transform = `translate(${trailPosRef.current.x - 20}px, ${trailPosRef.current.y - 20}px) scale(${isHoveringRef.current ? 1.5 : 1})`;
+      cur.style.transform = \`translate(\${posRef.current.x - 8}px, \${posRef.current.y - 8}px) scale(\${isHoveringRef.current ? 2 : 1})\`;
+      trail.style.transform = \`translate(\${trailPosRef.current.x - 20}px, \${trailPosRef.current.y - 20}px) scale(\${isHoveringRef.current ? 1.5 : 1})\`;
 
       rafId = requestAnimationFrame(animate);
     };
@@ -137,14 +139,14 @@ function ConstellationCanvas() {
             ctx.beginPath();
             ctx.moveTo(stars[i].x, stars[i].y);
             ctx.lineTo(stars[j].x, stars[j].y);
-            ctx.strokeStyle = `rgba(148,163,184,${alpha})`;
+            ctx.strokeStyle = \`rgba(148,163,184,\${alpha})\`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         }
         ctx.beginPath();
         ctx.arc(stars[i].x, stars[i].y, stars[i].r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(148,163,184,${Math.random() * 0.5 + 0.5})`;
+        ctx.fillStyle = \`rgba(148,163,184,\${Math.random() * 0.5 + 0.5})\`;
         ctx.fill();
       }
 
@@ -196,12 +198,12 @@ function NetworkCoverage() {
           <div 
             key={node.id} 
             onClick={() => setActiveNode(i)}
-            className={`p-3 flex justify-between items-center cursor-pointer transition-all border rounded-lg
-              ${activeNode === i 
+            className={\`p-3 flex justify-between items-center cursor-pointer transition-all border rounded-lg
+              \${activeNode === i 
                 ? 'border-[#94a3b8] bg-[#94a3b8]/10' 
-                : 'border-transparent hover:border-[#1e293b] hover:bg-[#1e293b]/30'}`}
+                : 'border-transparent hover:border-[#1e293b] hover:bg-[#1e293b]/30'}\`}
           >
-            <span className={`font-mono text-xs md:text-sm ${activeNode === i ? 'text-white font-bold' : 'text-slate-400'}`}>
+            <span className={\`font-mono text-xs md:text-sm \${activeNode === i ? 'text-white font-bold' : 'text-slate-400'}\`}>
               {node.name}
             </span>
             {activeNode === i && <span className="w-2 h-2 rounded-full bg-[#94a3b8] animate-pulse" />}
@@ -248,7 +250,7 @@ function NetworkCoverage() {
                 <div 
                   key={i} 
                   className="flex-1 bg-[#94a3b8]/30 hover:bg-[#94a3b8] transition-colors"
-                  style={{ height: `${Math.max(20, height)}%` }} 
+                  style={{ height: \`\${Math.max(20, height)}%\` }} 
                 />
               );
             })}
@@ -320,7 +322,7 @@ export default function Home() {
       </div>
 
       <header
-        className={`absolute top-0 w-full px-6 md:px-8 py-6 md:py-8 flex justify-between items-center z-50 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}
+        className={\`absolute top-0 w-full px-6 md:px-8 py-6 md:py-8 flex justify-between items-center z-50 transition-all duration-700 \${visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}\`}
       >
         <div className="font-serif text-xl md:text-2xl font-bold text-metallic tracking-tight">
           |Kelevra corp.
@@ -340,10 +342,10 @@ export default function Home() {
         </div>
 
         <div
-          className={`relative z-10 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          className={\`relative z-10 max-w-4xl mx-auto transition-all duration-1000 delay-200 \${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}\`}
         >
           <p className="text-[#94a3b8] text-[10px] md:text-xs tracking-[0.35em] md:tracking-[0.4em] font-semibold uppercase mb-4 md:mb-6 opacity-80">
-            {"A ACELERAÇÃO DIGITAL DEFINITIVA PARA GOIÂNIA, BRASÍLIA E ENTORNO"}
+            {"PARCEIRO DE TECNOLOGIA PARA PEQUENOS NEGÓCIOS"}
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight">
             {"Transformamos Empresas Físicas em "} <br className="hidden md:block" />
@@ -364,7 +366,7 @@ export default function Home() {
       </section>
 
       {/* MANIFESTO INSTITUCIONAL - A HISTÓRIA (NOVA SEÇÃO) */}
-      <section className={`relative px-6 py-20 md:py-32 bg-[#0a0b10] border-t border-slate-900 transition-all duration-700 delay-300 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section className={\`relative px-6 py-20 md:py-32 bg-[#0a0b10] border-t border-slate-900 transition-all duration-700 delay-300 \${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}\`}>
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#94a3b8]/30 to-transparent" />
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
@@ -379,7 +381,7 @@ export default function Home() {
           
           <div className="space-y-6 text-slate-400 font-light text-base md:text-lg leading-relaxed">
             <p>
-              {"A Kelevra Corp não nasceu em um escritório corporativo no Vale do Silício. Nós fomos forjados em 2024, nas ruas de Vicente Pires (DF), e agora expandindo nossas operações para Goiânia e todo o Entorno, observando uma injustiça silenciosa destruir o comércio local."}
+              {"A Kelevra Corp não nasceu em um escritório corporativo no Vale do Silício. Nós fomos forjados em 2024, no coração do Distrito Federal, observando uma injustiça silenciosa destruir o comércio local."}
             </p>
             <p>
               {"Víamos donos de restaurantes, clínicas e salões trabalhando 14 horas por dia. Empreendedores suando para entregar o melhor serviço, mas que no fim do mês, deixavam todo o seu lucro na mesa para pagar taxas abusivas de aplicativos de delivery ou perdiam milhares de reais com clientes que agendavam e simplesmente não apareciam."}
@@ -422,14 +424,14 @@ export default function Home() {
           {SOLUTIONS.map((sol, idx) => (
             <div
               key={sol.id}
-              className={`group relative flex flex-col transition-all duration-500
-                ${sol.featured
+              className={\`group relative flex flex-col transition-all duration-500
+                \${sol.featured
                   ? 'bg-[#0a0b10] border border-[#94a3b8]/50 shadow-[0_0_40px_rgba(148,163,184,0.08)]'
                   : 'bg-[#0a0b10] border border-slate-800/60 hover:border-[#94a3b8]/40'
                 }
-                ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
-              `}
-              style={{ transitionDelay: `${300 + idx * 120}ms` }}
+                \${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
+              \`}
+              style={{ transitionDelay: \`\${300 + idx * 120}ms\` }}
             >
               {sol.featured && (
                 <div className="absolute -top-px left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#94a3b8]/70 to-transparent" />
@@ -464,12 +466,12 @@ export default function Home() {
                 <button
                   onClick={handleWhatsApp}
                   data-hover
-                  className={`relative w-full py-4 font-semibold text-xs uppercase tracking-widest transition-all duration-300
-                    ${sol.featured
+                  className={\`relative w-full py-4 font-semibold text-xs uppercase tracking-widest transition-all duration-300
+                    \${sol.featured
                       ? 'bg-[#94a3b8] text-[#050507] hover:bg-[#cbd5e1]'
                       : 'border border-[#94a3b8]/40 bg-transparent text-[#94a3b8] hover:bg-[#94a3b8] hover:text-[#050507]'
                     }
-                  `}
+                  \`}
                 >
                   {"Falar com Especialista"}
                 </button>
@@ -480,7 +482,7 @@ export default function Home() {
       </section>
 
       {/* MANIFESTO / TERMINAL DE COBERTURA */}
-      <section className={`border-y border-slate-900 px-6 py-20 md:py-32 bg-[#08090d] transition-all duration-700 delay-500 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+      <section className={\`border-y border-slate-900 px-6 py-20 md:py-32 bg-[#08090d] transition-all duration-700 delay-500 \${visible ? 'opacity-100' : 'opacity-0'}\`}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
             <p className="text-[10px] uppercase tracking-[0.4em] text-[#94a3b8] mb-6 opacity-70">
@@ -540,3 +542,7 @@ export default function Home() {
     </main>
   );
 }
+`;
+
+fs.writeFileSync('C:/mycelium/kelevra-shop/src/app/page.tsx', pageContent, 'utf8');
+console.log('page.tsx written successfully in pure UTF-8 via Node.');
