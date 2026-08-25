@@ -374,12 +374,12 @@ export default function Home() {
           </div>
           
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-10 leading-tight text-center md:text-left">
-            {"Nascida na trincheira, para proteger o seu balcão."}
+            {"Nascida da vivência real, para proteger o seu negócio."}
           </h2>
           
           <div className="space-y-6 text-slate-400 font-light text-base md:text-lg leading-relaxed">
             <p>
-              {"A Kelevra Corp não nasceu em um escritório corporativo no Vale do Silício. Nós fomos forjados em 2024, nas ruas de Goiânia (DF), e agora expandindo nossas operações para Goiânia e todo o Entorno, observando uma injustiça silenciosa destruir o comércio local."}
+              {"A Kelevra Corp nasceu de anos nos bastidores, lado a lado com empresários. Ao entender as dores diárias de quem tem a coragem de empreender no Brasil, focamos nossas operações em Goiânia e todo o Entorno, observando uma injustiça silenciosa destruir o comércio local."}
             </p>
             <p>
               {"Víamos donos de restaurantes, clínicas e salões trabalhando 14 horas por dia. Empreendedores suando para entregar o melhor serviço, mas que no fim do mês, deixavam todo o seu lucro na mesa para pagar taxas abusivas de aplicativos de delivery ou perdiam milhares de reais com clientes que agendavam e simplesmente não apareciam."}
