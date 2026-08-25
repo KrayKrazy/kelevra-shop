@@ -343,7 +343,7 @@ export default function Home() {
           className={`relative z-10 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
         >
           <p className="text-[#94a3b8] text-[10px] md:text-xs tracking-[0.35em] md:tracking-[0.4em] font-semibold uppercase mb-4 md:mb-6 opacity-80">
-            {"A ACELERAÇÃO DIGITAL DEFINITIVA PARA GOIÂNIA, BRASÍLIA E ENTORNO"}
+            {"A ACELERAÇÃO DIGITAL DEFINITIVA PARA GOIÂNIA E ENTORNO"}
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight">
             {"Transformamos Empresas Físicas em "} <br className="hidden md:block" />
@@ -493,7 +493,7 @@ export default function Home() {
               {"Diferente de sistemas de prateleira onde você assina, recebe um login e precisa descobrir sozinho como usar, nós operamos como seu parceiro estratégico de tecnologia."}
             </p>
             <p className="text-slate-400 font-light leading-relaxed">
-              {"Atuamos na linha de frente em todo o Distrito Federal e Entorno. Nossos sistemas monitoram e blindam a operação dos nossos parceiros 24 horas por dia."}
+              {"Atuamos na linha de frente em Goiânia e Entorno. Nossos sistemas monitoram e blindam a operação dos nossos parceiros 24 horas por dia."}
             </p>
           </div>
           
