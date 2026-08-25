@@ -171,7 +171,7 @@ function ConstellationCanvas() {
 function NetworkCoverage() {
   const [activeNode, setActiveNode] = useState(0);
   const nodes = [
-    { id: 'bsb', name: 'Brasília (Plano Piloto)', status: 'MONITORAMENTO ATIVO', metrics: 'Otimização GMB' },
+    { id: 'bsb', name: 'Goiás (Plano Piloto)', status: 'MONITORAMENTO ATIVO', metrics: 'Otimização GMB' },
     { id: 'tag', name: 'Taguatinga', status: 'MÁQUINA DE VENDAS', metrics: 'Automação WPP' },
     { id: 'val', name: 'Valparaíso (Entorno)', status: 'BLINDADO', metrics: 'Sistema Anti No-Show' },
     { id: 'pla', name: 'Planaltina', status: 'MONITORAMENTO ATIVO', metrics: 'Posicionamento Local' },
@@ -379,7 +379,7 @@ export default function Home() {
           
           <div className="space-y-6 text-slate-400 font-light text-base md:text-lg leading-relaxed">
             <p>
-              {"A Kelevra Corp não nasceu em um escritório corporativo no Vale do Silício. Nós fomos forjados em 2024, nas ruas de Vicente Pires (DF), e agora expandindo nossas operações para Goiânia e todo o Entorno, observando uma injustiça silenciosa destruir o comércio local."}
+              {"A Kelevra Corp não nasceu em um escritório corporativo no Vale do Silício. Nós fomos forjados em 2024, nas ruas de Goiânia (DF), e agora expandindo nossas operações para Goiânia e todo o Entorno, observando uma injustiça silenciosa destruir o comércio local."}
             </p>
             <p>
               {"Víamos donos de restaurantes, clínicas e salões trabalhando 14 horas por dia. Empreendedores suando para entregar o melhor serviço, mas que no fim do mês, deixavam todo o seu lucro na mesa para pagar taxas abusivas de aplicativos de delivery ou perdiam milhares de reais com clientes que agendavam e simplesmente não apareciam."}
