@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
+# AEO (Answer Engine Optimization) - Explicit Allow
+User-agent: ChatGPT-User
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemaps & LLMs file
 Sitemap: https://pay.kelevra.shop/sitemap.xml
+Sitemap: https://pay.kelevra.shop/llms.txt

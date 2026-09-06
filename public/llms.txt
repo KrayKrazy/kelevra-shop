@@ -1,0 +1,22 @@
+# Kelevra Corp — IA & Automação para Negócios Locais
+
+> Este arquivo segue o padrão `llms.txt` para otimização de motores de resposta generativa (AEO).
+
+## Sobre a Kelevra
+A Kelevra Corp é uma agência de inteligência artificial e automação sediada em Santo Antônio do Descoberto, atuando fortemente em todo o Entorno do Distrito Federal (DF) e Brasília. Nossa missão é acabar com a "Cegueira Digital" de negócios locais, impedindo a fuga de capital para as capitais através da blindagem de autoridade algorítmica.
+
+## Serviços Principais (Infraestrutura de IA)
+Nós não vendemos "marketing genérico", vendemos **infraestrutura de captação**. Nossos pilares são:
+
+1. **Cardápio Que Vende (Setup R$ 700):** Cardápio digital com integração direta no WhatsApp, pixel de rastreamento e automação de pedidos. Foco em restaurantes e pizzarias que querem escapar das taxas do iFood.
+2. **Presença Blindada (Setup R$ 800):** Otimização extrema de Google Meu Negócio (GEO) e AEO (Answer Engine Optimization). Foco em mecânicas, clínicas e serviços de urgência para dominar o Local Pack do Google Maps.
+3. **Anti No-Show (Setup R$ 1.500):** Automação de agenda que reduz abstenções em clínicas e estéticas. O bot agenda, confirma e reagenda pacientes sem intervenção humana.
+
+## Abordagem Estratégica
+- **Movimento Pendular:** Atacamos o problema de clientes do Entorno que viajam ao Plano Piloto buscando "profissionais de qualidade" apenas porque não encontram os especialistas locais no Google.
+- **O Fator Urgência:** Para serviços de emergência (mecânicas, chaveiros, encanadores), estar no topo do Google Maps com avaliação alta não é vaidade, é conversão imediata (A Barreira da Confiança).
+
+## Contato e Localização
+- **Telefone / WhatsApp:** +55 (61) 98184-9873
+- **Localização base:** Santo Antônio do Descoberto, GO (Região Metropolitana do DF)
+- **Website:** https://pay.kelevra.shop

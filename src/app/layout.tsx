@@ -65,42 +65,60 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Kelevra Corp",
-              description:
-                "Infraestrutura de IA para negócios locais. Automação de WhatsApp, Google Maps, cardápio digital e sistema anti no-show.",
-              url: "https://pay.kelevra.shop",
-              telephone: "+5561981849873",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "DF",
-                addressCountry: "BR",
-              },
-              priceRange: "R$ 700 – R$ 1.500 setup",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Infraestruturas Kelevra",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: { "@type": "Service", name: "Cardápio Que Vende" },
-                    price: "700",
-                    priceCurrency: "BRL",
+              "@graph": [
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://pay.kelevra.shop/#organization",
+                  "name": "Kelevra Corp",
+                  "description": "Agência especializada em infraestrutura de IA, automação e SEO Local (GEO Hub) para negócios locais no Entorno do DF e Brasília. Acabamos com a Cegueira Digital.",
+                  "url": "https://pay.kelevra.shop",
+                  "logo": "https://pay.kelevra.shop/og-image.png",
+                  "image": "https://pay.kelevra.shop/og-image.png",
+                  "telephone": "+5561981849873",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Santo Antônio do Descoberto",
+                    "addressRegion": "GO",
+                    "addressCountry": "BR"
                   },
-                  {
-                    "@type": "Offer",
-                    itemOffered: { "@type": "Service", name: "Presença Blindada" },
-                    price: "800",
-                    priceCurrency: "BRL",
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: { "@type": "Service", name: "Anti No-Show" },
-                    price: "1500",
-                    priceCurrency: "BRL",
-                  },
-                ],
-              },
+                  "areaServed": ["Santo Antônio do Descoberto", "Brasília", "Distrito Federal", "Águas Lindas de Goiás"],
+                  "priceRange": "R$ 700 - R$ 1.500",
+                  "knowsAbout": ["Inteligência Artificial", "SEO Local", "Automação de WhatsApp", "Google Meu Negócio", "Cardápio Digital", "Sistemas Anti No-Show"]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://pay.kelevra.shop/#website",
+                  "url": "https://pay.kelevra.shop",
+                  "name": "Kelevra Corp | Infraestrutura de IA",
+                  "publisher": {
+                    "@id": "https://pay.kelevra.shop/#organization"
+                  }
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Infraestruturas Kelevra",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Cardápio Que Vende (Integração WhatsApp)" },
+                      "price": "700.00",
+                      "priceCurrency": "BRL"
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Presença Blindada (Google Meu Negócio & SEO Local)" },
+                      "price": "800.00",
+                      "priceCurrency": "BRL"
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": { "@type": "Service", "name": "Sistema Anti No-Show (Automação de Agendamentos)" },
+                      "price": "1500.00",
+                      "priceCurrency": "BRL"
+                    }
+                  ]
+                }
+              ]
             }),
           }}
         />
