@@ -14,5 +14,5 @@ User-agent: PerplexityBot
 Allow: /
 
 # Sitemaps & LLMs file
-Sitemap: https://pay.kelevra.shop/sitemap.xml
-Sitemap: https://pay.kelevra.shop/llms.txt
+Sitemap: https://kelevra.shop/sitemap.xml
+Sitemap: https://kelevra.shop/llms.txt

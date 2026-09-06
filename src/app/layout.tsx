@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kelevra Corp | Infraestrutura de IA para Negócios Locais",
     description: "Implantação 100% feita pelo nosso time. Sistema no ar em 72h. Sem fidelidade.",
-    url: "https://pay.kelevra.shop",
+    url: "https://kelevra.shop",
     siteName: "Kelevra Corp",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "https://pay.kelevra.shop/og-image.png",
+        url: "https://kelevra.shop/og-image.png",
         width: 1200,
         height: 630,
         alt: "Kelevra Corp — Infraestrutura de IA para Negócios Locais",
@@ -59,7 +59,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
-        <link rel="canonical" href="https://pay.kelevra.shop" />
+        <link rel="canonical" href="https://kelevra.shop" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -68,12 +68,12 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "ProfessionalService",
-                  "@id": "https://pay.kelevra.shop/#organization",
+                  "@id": "https://kelevra.shop/#organization",
                   "name": "Kelevra Corp",
                   "description": "Agência especializada em infraestrutura de IA, automação e SEO Local (GEO Hub) para negócios locais no Entorno do DF e Brasília. Acabamos com a Cegueira Digital.",
-                  "url": "https://pay.kelevra.shop",
-                  "logo": "https://pay.kelevra.shop/og-image.png",
-                  "image": "https://pay.kelevra.shop/og-image.png",
+                  "url": "https://kelevra.shop",
+                  "logo": "https://kelevra.shop/og-image.png",
+                  "image": "https://kelevra.shop/og-image.png",
                   "telephone": "+5561981849873",
                   "address": {
                     "@type": "PostalAddress",
@@ -87,11 +87,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://pay.kelevra.shop/#website",
-                  "url": "https://pay.kelevra.shop",
+                  "@id": "https://kelevra.shop/#website",
+                  "url": "https://kelevra.shop",
                   "name": "Kelevra Corp | Infraestrutura de IA",
                   "publisher": {
-                    "@id": "https://pay.kelevra.shop/#organization"
+                    "@id": "https://kelevra.shop/#organization"
                   }
                 },
                 {
