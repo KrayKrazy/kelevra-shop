@@ -24,21 +24,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kelevra Corp | Infraestrutura de IA para Negócios Locais",
     description: "Implantação 100% feita pelo nosso time. Sistema no ar em 72h. Sem fidelidade.",
-<<<<<<< Updated upstream
-    url: "https://kelevra.shop",
-=======
     url: "https://forms.kelevra.shop",
->>>>>>> Stashed changes
     siteName: "Kelevra Corp",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-<<<<<<< Updated upstream
-        url: "https://kelevra.shop/og-image.png",
-=======
         url: "https://forms.kelevra.shop/og-image.png",
->>>>>>> Stashed changes
         width: 1200,
         height: 630,
         alt: "Kelevra Corp — Infraestrutura de IA para Negócios Locais",
@@ -68,94 +60,66 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
-<<<<<<< Updated upstream
-        <link rel="canonical" href="https://kelevra.shop" />
-=======
         <link rel="canonical" href="https://forms.kelevra.shop" />
->>>>>>> Stashed changes
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-<<<<<<< Updated upstream
               "@graph": [
                 {
                   "@type": "ProfessionalService",
                   "@id": "https://kelevra.shop/#organization",
-                  "name": "Kelevra Corp",
-                  "description": "Agência especializada em infraestrutura de IA, automação e SEO Local (GEO Hub) para negócios locais no Entorno do DF e Brasília. Acabamos com a Cegueira Digital.",
-                  "url": "https://kelevra.shop",
-                  "logo": "https://kelevra.shop/og-image.png",
-                  "image": "https://kelevra.shop/og-image.png",
-                  "telephone": "+5561981849873",
-                  "address": {
+                  name: "Kelevra Corp",
+                  description: "Agência especializada em infraestrutura de IA, automação e SEO Local (GEO Hub) para negócios locais no Entorno do DF. Acabamos com a Cegueira Digital.",
+                  url: "https://forms.kelevra.shop",
+                  logo: "https://forms.kelevra.shop/og-image.png",
+                  image: "https://forms.kelevra.shop/og-image.png",
+                  telephone: "+5561981849873",
+                  address: {
                     "@type": "PostalAddress",
-                    "addressLocality": "Santo Antônio do Descoberto",
-                    "addressRegion": "GO",
-                    "addressCountry": "BR"
-=======
-              "@type": "LocalBusiness",
-              name: "Kelevra Corp",
-              description:
-                "Infraestrutura de IA para negócios locais. Automação de WhatsApp, Google Maps, cardápio digital e sistema anti no-show.",
-              url: "https://forms.kelevra.shop",
-              telephone: "+5561981849873",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "DF",
-                addressCountry: "BR",
-              },
-              priceRange: "R$ 700 – R$ 1.500 setup",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Infraestruturas Kelevra",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: { "@type": "Service", name: "Cardápio Que Vende" },
-                    price: "700",
-                    priceCurrency: "BRL",
->>>>>>> Stashed changes
+                    addressLocality: "Santo Antônio do Descoberto",
+                    addressRegion: "GO",
+                    addressCountry: "BR",
                   },
-                  "areaServed": ["Santo Antônio do Descoberto", "Brasília", "Distrito Federal", "Águas Lindas de Goiás"],
-                  "priceRange": "R$ 700 - R$ 1.500",
-                  "knowsAbout": ["Inteligência Artificial", "SEO Local", "Automação de WhatsApp", "Google Meu Negócio", "Cardápio Digital", "Sistemas Anti No-Show"]
+                  areaServed: ["Santo Antônio do Descoberto", "Entorno do DF", "Águas Lindas de Goiás"],
+                  priceRange: "R$ 700 - R$ 1.500",
+                  knowsAbout: ["Inteligência Artificial", "SEO Local", "Automação de WhatsApp", "Google Meu Negócio", "Cardápio Digital", "Sistemas Anti No-Show"],
                 },
                 {
                   "@type": "WebSite",
                   "@id": "https://kelevra.shop/#website",
-                  "url": "https://kelevra.shop",
-                  "name": "Kelevra Corp | Infraestrutura de IA",
-                  "publisher": {
-                    "@id": "https://kelevra.shop/#organization"
-                  }
+                  url: "https://forms.kelevra.shop",
+                  name: "Kelevra Corp | Infraestrutura de IA",
+                  publisher: {
+                    "@id": "https://kelevra.shop/#organization",
+                  },
                 },
                 {
                   "@type": "OfferCatalog",
-                  "name": "Infraestruturas Kelevra",
-                  "itemListElement": [
+                  name: "Infraestruturas Kelevra",
+                  itemListElement: [
                     {
                       "@type": "Offer",
-                      "itemOffered": { "@type": "Service", "name": "Cardápio Que Vende (Integração WhatsApp)" },
-                      "price": "700.00",
-                      "priceCurrency": "BRL"
+                      itemOffered: { "@type": "Service", name: "Cardápio Que Vende (Integração WhatsApp)" },
+                      price: "700.00",
+                      priceCurrency: "BRL",
                     },
                     {
                       "@type": "Offer",
-                      "itemOffered": { "@type": "Service", "name": "Presença Blindada (Google Meu Negócio & SEO Local)" },
-                      "price": "800.00",
-                      "priceCurrency": "BRL"
+                      itemOffered: { "@type": "Service", name: "Presença Blindada (Google Meu Negócio & SEO Local)" },
+                      price: "800.00",
+                      priceCurrency: "BRL",
                     },
                     {
                       "@type": "Offer",
-                      "itemOffered": { "@type": "Service", "name": "Sistema Anti No-Show (Automação de Agendamentos)" },
-                      "price": "1500.00",
-                      "priceCurrency": "BRL"
-                    }
-                  ]
-                }
-              ]
+                      itemOffered: { "@type": "Service", name: "Sistema Anti No-Show (Automação de Agendamentos)" },
+                      price: "1500.00",
+                      priceCurrency: "BRL",
+                    },
+                  ],
+                },
+              ],
             }),
           }}
         />
@@ -163,7 +127,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col cursor-none">
         {children}
 
-        {/* Meta Pixel - PageView base event */}
+        {/* Meta Pixel — PageView base event */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)

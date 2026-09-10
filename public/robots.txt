@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-<<<<<<< Updated upstream
 # AEO (Answer Engine Optimization) - Explicit Allow
 User-agent: ChatGPT-User
 Allow: /
@@ -15,9 +14,5 @@ User-agent: PerplexityBot
 Allow: /
 
 # Sitemaps & LLMs file
-Sitemap: https://kelevra.shop/sitemap.xml
-Sitemap: https://kelevra.shop/llms.txt
-=======
 Sitemap: https://forms.kelevra.shop/sitemap.xml
-
->>>>>>> Stashed changes
+Sitemap: https://forms.kelevra.shop/llms.txt
